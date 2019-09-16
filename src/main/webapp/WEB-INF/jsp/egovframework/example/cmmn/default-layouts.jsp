@@ -10,9 +10,11 @@
     <div class="container-fluid">         
         <div class="row">
             <tiles:insertAttribute name="left"/>
-            <tiles:insertAttribute name="content"/> 
-			<tiles:insertAttribute name="modal"/>
-			<tiles:insertAttribute name="footer"/>
+            <div class="col-md-9 right">
+            	<tiles:insertAttribute name="content"/> 
+				<tiles:insertAttribute name="modal"/>
+				<tiles:insertAttribute name="footer"/>
+        	</div>
         </div> 
     </div>
     <tiles:insertAttribute name="script"/>  

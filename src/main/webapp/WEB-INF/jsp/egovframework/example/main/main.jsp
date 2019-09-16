@@ -1,22 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
-<!-- <div class="notice">
-            <div>
-                <span>NEWS :FEEL FREE TO MAIL ME</span>
-                <span>You spin me right round, baby. Like a record, baby.</span>
-            </div>
-        </div>
-    <div class="noticePlayStop"><img class="play" src="https://img.icons8.com/material/24/000000/play--v1.png" height="20px"><img class="stop" src="https://img.icons8.com/metro/26/000000/pause.png" height="20px">
-    </div> -->
 
-<div class="col-md-9 right">
-    <div>
-        <h1>Good <span id="hello"></span>!<br>
-            I'm a developer ha-co.<br>
-        <h2>ha-co is short for <span class="underlineMagical"><b>happy-coding</b></span>.<br>
-            I'm most happy when coding. My favorite language is <span class="underlineMagical"><b>java-script</b></span>.
-        </h2>
-    </div>
-    <div class="contentBox first">
+<div>
+    <h1>Good <span id="hello"></span>!<br>
+        I'm a developer ha-co.<br>
+    <h2>ha-co is short for <span class="underlineMagical"><b>happy-coding</b></span>.<br>
+        I'm most happy when coding. My favorite language is <span class="underlineMagical"><b>java-script</b></span>.
+    </h2>
+</div>
+<div class="contentBox first">
         <span class="subHeader1">console.log(&nbsp;<span class="subHeader2">skillSet</span>&nbsp;);</span><!--<span class="categoryBtn"><a href="#">area</a>&nbsp;|&nbsp;<a href="#">favorite</a></span>-->
         <div class="contentBoxIner">
             <div class="col-md-3 col-sm-3 col-xs-6">
@@ -67,7 +58,7 @@
             </div>                          
         </div>
     </div>
-    <div class="contentBox last">
+<div class="contentBox last">
         <span class="subHeader1">console.log(&nbsp;<span class="subHeader2">portfolio</span>&nbsp;);</span><span class="categoryBtn"><a href="#">latest</a>&nbsp;|&nbsp;<a href="#">oldest</a></span>
         <div class="contentBoxIner">
             <div class="portfolioBox">
@@ -89,15 +80,15 @@
                     <div class="underScore">     
                     </div>
                     <div class="portfolioExplain">
-                        프로젝트에 대한 간단한 설명이 들어갑니다.프로젝트에 대한 간단한 설명이 들어갑니다.
+                    ha-co.net에 개발과 관련된 라이브러리를 만들기 위해 게시판을 기능을 구현하였습니다.   
                     </div>
                     <a href="portfolio_01.html" class="moreBtn 404-trigger">
                             <span>Project details&nbsp;&nbsp;&nbsp;></span>
                             <div class="transition"></div>
                     </a>
                     <div class="projectTag">
-                        #CSS #jQuery #html # egovframe # springBoot
-                        #bootstrap #ajax #json #API #jstl #mybatis 
+                        #HTML #CSS #Javascript #jQuery #java 
+                        #egovframe #MariaDB #JSP #JSTL # MyBatis #ajax #json 
                     </div>
                 </div>
             </div>
@@ -120,15 +111,15 @@
                     <div class="underScore">     
                     </div>
                     <div class="portfolioExplain">
-                        프로젝트에 대한 간단한 설명이 들어갑니다.프로젝트에 대한 간단한 설명이 들어갑니다.
+                    ha-co.net에 회원가입을 하고 로그인/아웃하는 기능을 구현하였습니다.
                     </div>
                     <a href="portfolio_01.html" class="moreBtn 404-trigger">
                             <span>Project details&nbsp;&nbsp;&nbsp;></span>
                             <div class="transition"></div>
                     </a>
                     <div class="projectTag">
-                        #Node.js #Javascript #Express #React #Ajax #Json
-                        #bootstrap #RESTful API #Passport 
+                        #HTML #CSS #Javascript #Bootstrap #jQuery #java 
+                        #egovframe #MariaDB #JSP #ajax #json 
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-12 portfolioImage portfolioEvenPC hideme">
@@ -159,18 +150,17 @@
                     <div class="underScore">     
                     </div>
                     <div class="portfolioExplain">
-                            프로젝트에 대한 간단한 설명이 들어갑니다.프로젝트에 대한 간단한 설명이 들어갑니다.
+                    ha-co.net은 웹개발자 ha-co에 대한 소개 그리고 개발자로서 성장하기 위한 라이브러리를 만들고 기록하는 공간입니다.
                     </div>
                     <a href="portfolio_01.html" class="moreBtn 404-trigger">
                             <span>Project details&nbsp;&nbsp;&nbsp;></span>
                             <div class="transition"></div>
                     </a>
                     <div class="projectTag">
-                        #CSS #jQuery #html #egovframe # springBoot
-                        #Node.js #Javascript #Express #React 
+                        #HTML #CSS #Javascript #Bootstrap #jQuery #java 
+                        #egovframe #MariaDB #Tiles #JSP #ajax #json
                     </div>
                 </div>
             </div>                              
         </div>
     </div>
-</div>

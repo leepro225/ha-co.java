@@ -47,12 +47,14 @@
         // Popup Modal delete 
         $('.delete-trigger').on('click', function() {
             $('.haco-delete-modal-wrapper').toggleClass('open');
+            
             return false;
         });
 
         // Popup Modal write 
         $('.write-trigger').on('click', function() {
             $('.haco-write-modal-wrapper').toggleClass('open');
+           
             return false;
         });
 

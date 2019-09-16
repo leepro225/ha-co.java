@@ -1,38 +1,28 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
-<!-- <div class="notice">
-    <div>
-        <span>NEWS : NOW, HACO IS FINDING NEW WORK, FEEL FREE TO MAIL ME</span>
-        <span>You spin me right round, baby. Like a record, baby.</span>
-    </div>
-</div>
-<div class="noticePlayStop"><img class="play" src="https://img.icons8.com/material/24/000000/play--v1.png" height="20px"><img class="stop" src="https://img.icons8.com/metro/26/000000/pause.png" height="20px">
-</div> -->
-
-<div class="col-md-9 right">
-    <div class="row">
-        <div class="libraryHeader col-lg-6">
-            <h2><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span><span class="underlineMagical"><b><a href="libraryList.html">back to the list</a></b></span></h2>
-                <h1>JavaScript.</h1>                                     
-        </div>      
-        <div class="librarySearchBox col-lg-2 col-xs-2">
-            <div class="input-group">
-            <span class="input-group-btn">
-                <button class="btn btn-default haco-btn" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-            </span>
-            <input type="text" class="haco-form-control" placeholder="찾기">
-            </div><!-- /input-group -->
-        </div><!-- /.col-lg-6 -->
-        <div class="librarySortBox col-lg-2 col-xs-2 selectUI">
-            <a href="#none" class="selCheck">정렬 방식<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>                   
-            <ul class="selectOption" style="display:none;">
-                <li><a href="#">글번호순</a></li>
-                <li><a href="#">최신순</a></li>
-                <li><a href="#">오래된순</a></li>
-                <li><a href="#">제목 오름차순</a></li>
-                <li><a href="#">제목 내림차순</a></li>
-            </ul>
-        </div><!-- /.col-lg-6 -->
-        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+<div class="row">
+    <div class="libraryHeader col-lg-6">
+        <h2><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span><span class="underlineMagical"><b><a href="/libraryList.do">back to the list</a></b></span></h2>
+            <h1>JavaScript.</h1>                                     
+    </div>      
+    <div class="librarySearchBox col-lg-2 col-xs-2">
+        <div class="input-group">
+        <span class="input-group-btn">
+            <button class="btn btn-default haco-btn" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+        </span>
+        <input type="text" class="haco-form-control" placeholder="찾기">
+        </div><!-- /input-group -->
+    </div><!-- /.col-lg-6 -->
+    <div class="librarySortBox col-lg-2 col-xs-2 selectUI">
+        <a href="#none" class="selCheck">정렬 방식<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>                   
+        <ul class="selectOption" style="display:none;">
+            <li><a href="#">글번호순</a></li>
+            <li><a href="#">최신순</a></li>
+            <li><a href="#">오래된순</a></li>
+            <li><a href="#">제목 오름차순</a></li>
+            <li><a href="#">제목 내림차순</a></li>
+        </ul>
+    </div><!-- /.col-lg-6 -->
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <a href="#" class="addList write-trigger"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a> 
             <div class="panel">
                                 <div class="haco-panel-heading" role="tab" id="headingOne">
@@ -200,6 +190,5 @@
                                 </div>
                                 </div>
                             </div>
-        </div>
-     </div><!-- /.row -->
-</div>
+  	</div>
+</div><!-- /.row -->
