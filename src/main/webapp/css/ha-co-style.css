@@ -1423,7 +1423,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
     position: relative;
     top: 50%;
     left: 50%;
-    background-image: url('../img/signIn.jpg');
+    background-image: url('../images/signIn.jpg');
     opacity: 0;
     transition: all 0.5s ease-in-out;
     border: 3px solid #000;
@@ -1536,7 +1536,7 @@ input.signIn-normal {
     position: relative;
     top: 50%;
     left: 50%;
-    background-image: url('../img/signUp.jpg');
+    background-image: url('../images/signUp.jpg');
     opacity: 0;
     transition: all 0.5s ease-in-out;
     border: 3px solid #000;

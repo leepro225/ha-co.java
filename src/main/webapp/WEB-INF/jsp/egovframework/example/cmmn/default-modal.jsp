@@ -3,14 +3,14 @@
 <div class="haco-404-modal-wrapper">
     <div class="haco-404-modal">
         <div class="haco-404-modal-head">
-            <img src="img/alert.png" class="alertPng"><span class="modalMassage">Oops, you've got 404 error message!</span>
+            <img src="images/alert.png" class="alertPng"><span class="modalMassage">Oops, you've got 404 error message!</span>
             <a class="btn-close 404-trigger" href="#">
                 <i class="fa fa-times" aria-hidden="true"></i>
             </a>
         </div>
         <div class="haco-404-modal-content">
             <div class="modalQuestionBox">
-                <img src="img/404.gif"><br>
+                <img src="images/404.gif"><br>
                 <span class="modalQuestion">Sorry, I'm making this page now.</span>
             </div>
             <a class="404-trigger" href="#"><span class="modalAnswer">RETURN</span></a>
@@ -22,7 +22,7 @@
 <div class="haco-signIn-modal-wrapper">
     <div class="haco-signIn-modal">
         <div class="haco-signIn-modal-head">
-            <img src="img/alert.png" class="alertPng"><span class="modalMassage">hello!</span>
+            <img src="images/alert.png" class="alertPng"><span class="modalMassage">hello!</span>
             <a class="btn-close signIn-trigger" href="#">
                 <i class="fa fa-times" aria-hidden="true"></i>
             </a>
@@ -48,7 +48,7 @@
 <div class="haco-signUp-modal-wrapper">
     <div class="haco-signUp-modal">
         <div class="haco-signUp-modal-head">
-            <img src="img/alert.png" class="alertPng"><span class="modalMassage">Nice to meet u!</span>
+            <img src="images/alert.png" class="alertPng"><span class="modalMassage">Nice to meet u!</span>
             <a class="btn-close signUp-trigger" href="#">
                 <i class="fa fa-times" aria-hidden="true"></i>
             </a>
