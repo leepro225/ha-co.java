@@ -4,31 +4,44 @@
 
 	var leftChk = {
 			
-			pageSubmitFn : function(menuStr) {
+			pageSubmitFn : function(obj) {
+				var $leftFrm 	= $("#leftFrm");
 				
-				$("#leftFrm").attr("action", menuStr + ".do");
+				$leftFrm.attr("action", obj.menuStr);
 				
-				$("#pageName").val(menuStr);
-				
-				$("#leftFrm").submit();
+				$("#pageName").val(obj.idx);
+
+				$leftFrm.submit();
 			}
 	}
-	
+
 	$(function() {
-		var pageName = "";
+		var liIndex = "${param.pageName}",
+			$leftLi = $("#leftUl > li");
 		
-		$("#leftUl > li").removeClass("active");
+		$leftLi.removeClass("active");
 		
-		pageName = "${param.pageName}";
+		// 하이라이트
+		$leftLi.eq(liIndex).addClass("active");
 		
-		$("#" + pageName).addClass("active");
-		
-		$("#leftUl > li").click(function() {
+		// 페이지 이동
+		$leftLi.click(function() {
+			var menuStr = "",
+				menuStrArr = ["main.do", "", "libraryList.do", "contact.do"],
+				$that = $(this);
 			
-			leftChk.pageSubmitFn($(this).attr("id"));
+			menuStrArr.forEach(function(e, i){
+				
+				if ($that.index() === i) {
+					menuStr = e;
+				}
+			});
+			
+			// 페이지 호출
+			leftChk.pageSubmitFn({menuStr : menuStr, idx : $that.index()});
 		});
-		
 	});
+	
 </script>
 
 <form id="leftFrm">
@@ -44,10 +57,10 @@
 <div class="menuBg">
     <div class="menu-list-pc">
         <ul id="leftUl">
-            <li id="main"><a href="#">skills</a></li>
+            <li><a href="#">skills</a></li>
             <li><a href="#" class="404-trigger">portfolio</a></li>
-            <li id="libraryList"><a href="#">library</a></li>
-            <li id="contact"><a href="#">contact</a></li>
+            <li><a href="#">library</a></li>
+            <li><a href="#">contact</a></li>
             <li><a href="#" class="signIn-trigger">sign in</a></li>
         </ul>
     </div>
