@@ -2,7 +2,38 @@
 
 <script>
 
+	var leftChk = {
+			
+			pageSubmitFn : function(menuStr) {
+				
+				$("#leftFrm").attr("action", menuStr + ".do");
+				
+				$("#pageName").val(menuStr);
+				
+				$("#leftFrm").submit();
+			}
+	}
+	
+	$(function() {
+		var pageName = "";
+		
+		$("#leftUl > li").removeClass("active");
+		
+		pageName = "${param.pageName}";
+		
+		$("#" + pageName).addClass("active");
+		
+		$("#leftUl > li").click(function() {
+			
+			leftChk.pageSubmitFn($(this).attr("id"));
+		});
+		
+	});
 </script>
+
+<form id="leftFrm">
+	<input type="hidden" id="pageName" name="pageName">
+</form>
 
 <div class="col-md-3 left">                  
 <a class="menu-trigger" href="#">
@@ -12,11 +43,11 @@
 </a>   
 <div class="menuBg">
     <div class="menu-list-pc">
-        <ul>
-            <li><a href="/main.do">skills</a></li>
+        <ul id="leftUl">
+            <li id="main"><a href="#">skills</a></li>
             <li><a href="#" class="404-trigger">portfolio</a></li>
-            <li><a href="/libraryList.do">library</a></li>
-            <li><a href="/contact.do">contact</a></li>
+            <li id="libraryList"><a href="#">library</a></li>
+            <li id="contact"><a href="#">contact</a></li>
             <li><a href="#" class="signIn-trigger">sign in</a></li>
         </ul>
     </div>
