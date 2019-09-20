@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
+
 <script>
+	
+	function startTime() {
+		return false;
+	}
 
     $(document).ready(function(){
 
@@ -44,7 +49,7 @@
             $(".right").animate({scrollTop: 0}, 500);
         });
 
-        // Popup Modal delete 
+     	// Popup Modal delete 
         $('.delete-trigger').on('click', function() {
             $('.haco-delete-modal-wrapper').toggleClass('open');
             
@@ -54,7 +59,7 @@
         // Popup Modal write 
         $('.write-trigger').on('click', function() {
             $('.haco-write-modal-wrapper').toggleClass('open');
-           
+            
             return false;
         });
 

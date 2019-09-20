@@ -66,7 +66,7 @@
                     <div class="imac">
                         <div class="browser"><div class="browser_close"><span class="close-first-child"></span><span class="close-last-child"></span></div><div class="browser_maximum"></div><div class="browser_minimum"></div></div>
                         <div class="screen">
-                            <div class="viewport" style="background-image:url('images/portfolioPreview01.jpg');"></div>
+                            <div class="viewport" style="background-image:url('images/portfolioPreview03.jpg');"></div>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
                     <div class="imac">
                         <div class="browser"><div class="browser_close"><span class="close-first-child"></span><span class="close-last-child"></span></div><div class="browser_maximum"></div><div class="browser_minimum"></div></div>
                         <div class="screen">
-                            <div class="viewport" style="background-image:url('images/portfolioPreview03.jpg');"></div>
+                            <div class="viewport" style="background-image:url('images/portfolioPreview01.jpg');"></div>
                         </div>
                     </div>
                 </div>

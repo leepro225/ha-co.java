@@ -1,4 +1,46 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!-- delete -->
+<div class="haco-delete-modal-wrapper">
+    <div class="haco-delete-modal">
+        <div class="haco-delete-modal-head">
+            <img src="images/alert.png" class="alertPng"><span class="modalMassage">Alert!</span>
+            <a class="btn-close delete-trigger" href="#">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="haco-delete-modal-content">
+            <div class="modalQuestionBox">
+                <span class="modalQuestion">Are you sure to delete?</span>
+                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span><br>
+            </div>
+            <a class="delete-trigger" href="#"><span class="modalAnswer">YES</span></a><a class="delete-trigger" href="#"><span class="modalAnswer btnBlack">NO</span></a>
+        </div>
+    </div>
+</div>
+<!-- write -->
+<div class="haco-write-modal-wrapper">
+    <div class="haco-write-modal">
+        <div class="haco-write-modal-head">
+            <img src="images/alert.png" class="alertPng"><span class="modalMassage">Don't forget to push save botton!</span>
+            <a class="btn-close write-trigger" href="#">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="haco-write-modal-content">
+            <span class="modalQuestion">Title</span>
+            <div class="modalUnderline">
+                <form action="/">
+                    <input type="text" name="title" value="write title here..." style="border: 0px;"><br>
+                </form>
+            </div>
+            <form method="post">
+                <textarea id="summernote" name="editordata"></textarea>
+            </form>
+            <a class="write-trigger" href="#"><span class="modalAnswer">SAVE</span></a>
+        </div>
+    </div>
+</div>
+
 <!-- 404 -->
 <div class="haco-404-modal-wrapper">
     <div class="haco-404-modal">
@@ -33,11 +75,14 @@
                     <h4 class="signIn-bold signIn-welcome-text">Welcome Back!</h4>
                     <p class="signIn-normal signIn-text">To keep connected with me please sign in with your personal info</p>
                 </div>
-                <input type="text" placeholder="id" class="signIn-normal">
-                <br/>
-                <input type="password" placeholder="password" class="signIn-normal"><br>
-                <p class="signIn-normal signIn-forgot">Forgot your <a href="#">password</a>?</p>
-                <button class="signIn-b-button signIn-normal">SIGN IN</button>
+                <form method="post" action="signInAction.jsp">
+                	<input type="text" placeholder="Id" class="signIn-normal" name="userId" maxlength="20">
+                	<br/>
+                	<input type="password" placeholder="Password" class="signIn-normal" name="userPassword" maxlength="20">
+                	<br/>
+                	<p class="signIn-normal signIn-forgot">Forgot your <a href="#">password</a>?</p>
+                	<input type="submit" value="SIGN IN" class="signIn-b-button signIn-normal">
+                </form>
                 <div class="signIn-btn"><a class="signUp-trigger"href="#">SIGN UP</a></div>
             </div>
         </div>
